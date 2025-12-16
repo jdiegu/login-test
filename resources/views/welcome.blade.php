@@ -43,6 +43,7 @@
                         class="px-4 py-2 rounded-md text-sm font-medium border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition">
                         Log in
                     </a>
+                    
                     @if (Route::has('register'))
                         <a href="{{ route('register') }}"
                             class="px-4 py-2 rounded-md text-sm font-medium bg-black text-white dark:bg-white dark:text-black hover:opacity-90 transition">
@@ -56,12 +57,11 @@
 
     <main class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-5">
 
-        <!-- TEXT CONTENT -->
         <section>
             @guest
                 <span
                     class="inline-block mb-4 px-3 py-1 rounded-full text-xs font-medium bg-neutral-100 dark:bg-neutral-800">
-                    Proyecto académico
+                    Proyecto Final
                 </span>
 
                 <h2 class="text-4xl lg:text-5xl font-bold tracking-tight mb-6">
@@ -69,8 +69,7 @@
                 </h2>
 
                 <p class="text-neutral-600 dark:text-neutral-400 max-w-xl mb-8">
-                    Esta aplicación forma parte de un <strong>proyecto académico</strong> desarrollado con Laravel.
-                    Puedes iniciar sesión para explorar sus funcionalidades o acceder utilizando tu cuenta de Google.
+                    Esta web es el proyecto final del curso de Php Laravel utilizando lo aprendido en el curso y usando la Autenticación local y con Google
                 </p>
 
                 <div class="flex flex-wrap gap-4">
@@ -82,6 +81,7 @@
                         class="px-6 py-3 rounded-lg border border-neutral-300 dark:border-neutral-700 font-medium hover:bg-neutral-100 dark:hover:bg-neutral-800 transition">
                         Iniciar con Google
                     </a>
+
                 </div>
             @endguest
 
@@ -117,31 +117,22 @@
                     </p>
 
                     <div class="flex items-center gap-4">
-                        <a href="mailto:juan.morales@email.com"
+                        <a href="jdiegumov@gmail.com"
                             class="text-neutral-500 hover:text-black dark:hover:text-white transition" title="Email">
                             <i class="fa-regular fa-envelope fa-2xl"></i>
                         </a>
 
-
-                        <!-- GitHub -->
-                        <a href="https://github.com/juandm" target="_blank"
+                        <a href="https://github.com/jdiegu" target="_blank"
                             class="text-neutral-500 hover:text-black dark:hover:text-white transition" title="GitHub">
                             <i class="fa-brands fa-github fa-2xl"></i>
                         </a>
 
-
-                        <!-- LinkedIn -->
-                        <a href="https://linkedin.com/in/juandm" target="_blank"
-                            class="text-neutral-500 hover:text-black dark:hover:text-white transition" title="LinkedIn">
-                            <i class="fa-brands fa-linkedin fa-2xl"></i>
-                        </a>
                     </div>
                 </div>
 
             @endauth
         </section>
 
-        <!-- VISUAL CARD -->
         <section class="relative">
 
             <div class="flex justify-center">
@@ -149,7 +140,6 @@
                 <img src="{{ asset('media/Laravel-Logo.wine.png') }}" alt="Laravel Logo"
                     class="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto object-contain rounded-xl">
             </div>
-
 
             <div
                 class="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-6 shadow-sm">
